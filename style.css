@@ -1,0 +1,97 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #000;
+  color: #e7e7e7;
+  line-height: 1.5;
+}
+
+/* Background Elements */
+.image-grad {
+  position: absolute;
+  top: 0;
+  right: 0;
+  opacity: 0.5;
+  z-index: -1;
+}
+
+.layer-blur {
+  width: 25rem;
+  height: 0; /* Adjust if you want visible content */
+  position: absolute;
+  top: 20%;
+  right: 0;
+  box-shadow: 0 0 800px 15px rgb(255, 255, 255);
+  transform: rotate(-30deg);
+  z-index: -1;
+}
+
+/* Container and Header */
+.container {
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 2rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.container header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 5rem;
+  z-index: 999;
+}
+.container header h1 {
+  margin: 0;
+  font-size: 3rem;
+  font-weight: 300;
+}
+.container header nav {
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+  margin-left: -5%;
+}
+.container header nav a {
+  font-size: 1rem;
+  letter-spacing: 1px; /* Adjusted letter spacing */
+  transition: color 0.2s ease;
+  text-decoration: none;
+  color: inherit;
+}
+.container header nav a:hover {
+  color: #a7a7a7;
+}
+.container header .btn-sign {
+  background-color: #a7a7a7;
+  color: black;
+  padding: 0.8rem 2rem;
+  border-radius: 15px;
+  border: none;
+  font-size: 1rem;
+  font-weight: 500;
+  transition: background-color 0.2s ease;
+  cursor: pointer;
+}
+.container header .btn-sign:hover {
+  background-color: white;
+}
+
+spline-viewer {
+  width: 100%;
+  height: 80vh;
+  border-radius: 12px;
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+  background: transparent;
+  overflow: hidden;
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+spline-viewer:hover {
+  transform: scale(1); /* Removed scaling to avoid triggering scrollbars */
+  box-shadow: 0px 12px 24px rgba(0, 0, 0, 0.3);
+}/*# sourceMappingURL=style.css.map */
